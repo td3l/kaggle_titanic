@@ -183,5 +183,6 @@ def output_results(dt):
     output = pd.DataFrame({ 'PassengerId' : ids, 'Survived': preds })
     output.to_csv('titanic_predictions.csv', index = False)
     return output
-    
+
+# Outputs .csv file with predictions
 output_results(dt_test)
